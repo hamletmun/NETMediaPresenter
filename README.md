@@ -5,7 +5,7 @@ Very simple media presenter using .NET and WPF
 Either download the pre-built binary or build it from source yourself
 
 ### Pre-built
-1. Download the pre-built binary: [NETMediaPresenter.exe](../../releases/latest/download/NETMediaPresenter.exe)
+1. Download the pre-built binary: [NETMediaPresenter.zip](../../releases/latest/download/NETMediaPresenter.zip)
 
 ### Source
 1. Download the source code: [NETMediaPresenter-master.zip](../../archive/master.zip)
