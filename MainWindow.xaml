@@ -1,0 +1,21 @@
+<Window x:Class="NETMediaPresenter.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="NET Media Presenter"
+    WindowStartupLocation="CenterScreen"
+    Width="640" Height="240"
+    MinWidth="240" MinHeight="120">
+
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Top">
+            <Label>Drop media files here and show on:</Label>
+            <ComboBox Name="ScreenList" SelectedItem="{Binding SelectInfo, Mode=OneWayToSource}" />
+        </WrapPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Name="StatusBar">Ready</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+        <ListView Name="MediaList" DockPanel.Dock="Top" SelectedItem="{Binding SelectInfo, Mode=OneWayToSource}" AllowDrop="True" />
+    </DockPanel>
+</Window>
