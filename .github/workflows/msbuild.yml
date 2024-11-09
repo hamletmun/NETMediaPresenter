@@ -23,3 +23,8 @@ jobs:
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: MSBuild.exe .\NETMediaPresenter.csproj
+    - uses: actions/upload-artifact@v4
+      with:
+        path: |
+          NETMediaPresenter.exe
+          NETMediaPresenter.pdb
