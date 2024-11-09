@@ -10,6 +10,10 @@ jobs:
 
   build:
 
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
     runs-on: windows-2019
 
     steps:
@@ -21,5 +25,5 @@ jobs:
       run: MSBuild.exe .\NETMediaPresenter.csproj
     - uses: actions/upload-artifact@v4
       with:
-        name: NETMediaPresenter.exe
-        path: NETMediaPresenter.exe
+        name: ${{ matrix.configuration }}\NETMediaPresenter.exe
+        path: bin\${{ matrix.configuration }}\NETMediaPresenter.exe
