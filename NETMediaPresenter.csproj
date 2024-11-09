@@ -1,7 +1,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
     <PropertyGroup>
-        <TargetFramework>net472</TargetFramework>
-        <Configuration>Release</Configuration>
+        <TargetFramework>net47</TargetFramework>
         <OutputPath>.</OutputPath>
         <OutputType>WinExe</OutputType>
     </PropertyGroup>
