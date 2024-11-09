@@ -2,8 +2,6 @@
     <PropertyGroup>
         <TargetFramework>net47</TargetFramework>
         <LanguageTargets>$(MSBuildToolsPath)\Microsoft.CSharp.targets</LanguageTargets>
-        <Configuration>Debug;Release</Configuration>
-        <OutputPath>.\$(Configuration)\</OutputPath>
         <OutputType>WinExe</OutputType>
     </PropertyGroup>
 
