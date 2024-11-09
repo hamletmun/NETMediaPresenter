@@ -1,6 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
     <PropertyGroup>
         <TargetFramework>net47</TargetFramework>
+        <LanguageTargets>$(MSBuildToolsPath)\Microsoft.CSharp.targets</LanguageTargets>
         <OutputPath>.</OutputPath>
         <OutputType>WinExe</OutputType>
     </PropertyGroup>
