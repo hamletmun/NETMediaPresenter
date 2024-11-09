@@ -16,4 +16,5 @@
         <Page Include="MainWindow.xaml;Window2.xaml" />
         <Compile Include="MainWindow.xaml.cs;Window2.xaml.cs" />
     </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
