@@ -25,5 +25,5 @@ jobs:
       run: MSBuild.exe .\NETMediaPresenter.csproj
     - uses: actions/upload-artifact@v4
       with:
-        name: NETMediaPresenter-${{ matrix.configuration }}.exe
-        path: bin\${{ matrix.configuration }}\NETMediaPresenter.exe
+        name: ${{ matrix.configuration }}
+        path: bin\${{ matrix.configuration }}\NETMediaPresenter.*
