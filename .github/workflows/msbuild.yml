@@ -21,6 +21,5 @@ jobs:
       run: MSBuild.exe .\NETMediaPresenter.csproj
     - uses: actions/upload-artifact@v4
       with:
-        path: |
-          NETMediaPresenter.exe
-          NETMediaPresenter.pdb
+        name: NETMediaPresenter.exe
+        path: NETMediaPresenter.exe
