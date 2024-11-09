@@ -22,7 +22,7 @@ jobs:
       uses: microsoft/setup-msbuild@v2
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: MSBuild.exe .\NETMediaPresenter.csproj
+      run: MSBuild.exe .\NETMediaPresenter.csproj /p:Configuration=${{ matrix.configuration }}
     - uses: actions/upload-artifact@v4
       with:
         name: ${{ matrix.configuration }}
