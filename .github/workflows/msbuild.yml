@@ -22,8 +22,10 @@ jobs:
       uses: microsoft/setup-msbuild@v3
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: MSBuild.exe .\NETMediaPresenter.csproj /p:Configuration=${{ matrix.configuration }} /t:Restore
+      run: |
+        MSBuild.exe .\NETMediaPresenter.csproj /t:Restore
+        MSBuild.exe .\NETMediaPresenter.csproj /p:Configuration=${{ matrix.configuration }}
     - uses: actions/upload-artifact@v7.0.2
       with:
         name: NETMediaPresenter-${{ matrix.configuration }}
-        path: NETMediaPresenter\NETMediaPresenter\bin\${{ matrix.configuration }}\NETMediaPresenter.*
+        path: bin\${{ matrix.configuration }}\NETMediaPresenter.*
