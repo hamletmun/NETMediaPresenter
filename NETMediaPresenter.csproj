@@ -11,6 +11,7 @@
         <Reference Include="WindowsBase" />
         <Reference Include="PresentationCore" />
         <Reference Include="PresentationFramework" />
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
 
         <ApplicationDefinition Include="App.xaml" />
         <Page Include="MainWindow.xaml;Window2.xaml" />
